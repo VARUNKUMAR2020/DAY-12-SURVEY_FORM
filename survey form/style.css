@@ -1,0 +1,101 @@
+body {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  background-color: #ffff;
+  margin: 20px;
+}
+
+.input-text label {
+  display: block;
+}
+
+#star {
+  color: red;
+}
+
+.input-text input {
+  width: 250;
+  height: 20px;
+}
+
+#indication {
+  display: inline;
+  font-size: small;
+  padding-left: 50px;
+  font-weight: lighter;
+}
+
+.first-ind {
+  position: relative;
+  right: 45px;
+}
+
+.email label {
+  margin-top: 20px;
+}
+
+.exp label {
+  margin-top: 20px;
+}
+
+h4 {
+  font-size: small;
+  margin-top: 10px;
+  font-weight: lighter;
+}
+
+.exp img {
+  width: 20px;
+  margin-top: 5px;
+}
+
+.table-content {
+  padding: 15px 15px 15px 15px;
+}
+
+.table-content thead td {
+  font-size: 10px;
+  font-weight: normal;
+  padding: 10px auto ;
+}
+
+.table-content tbody td {
+  padding-top: 6px;
+  text-align: center;
+}
+
+#radio-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+tbody tr:nth-child(odd) {
+  background-color:#F1F1F1;
+}
+
+.text-box label{
+     padding-top: 15px ;
+}
+
+.text-box input{
+  width: 900px;
+  height: 100px;
+}
+
+.table-content #big-container{
+  font-size: normal;
+  display: flex;
+  justify-content: center;
+}
+
+.second-section{
+  padding-top: 10px;
+}
+
+.second-section .table-content{
+  padding-top: 3px;
+}
+

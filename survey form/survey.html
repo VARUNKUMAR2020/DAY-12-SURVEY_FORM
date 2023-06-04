@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SURVEY FORM</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="input-text">
+        <div>
+            <label for="name">Name<span id="star">*</span></label>
+            <input type="text" name="firstName" required>
+            <input type="text" name="lastName" required>
+        </div>
+
+        <div class="ind">
+            <label class="first-ind" id="indication" for="name">firstName</label>
+            <label id="indication" for="name">lastName</label>
+        </div>
+
+        <div class="email">
+            <label for="email">Email<span id="star">*</span></label>
+            <input type="email" name="email" required>
+        </div>
+        <div class="exp">
+            <label for="experience">Your Experience<span id="star">*</span></label>
+            <img id="myImage" src="star.png" onclick="changeImage()" alt="star image">
+            <img id="myImage" src="star.png" onclick="changeImage()" alt="star image">
+            <img id="myImage" src="star.png" onclick="changeImage()" alt="star image">
+            <img id="myImage" src="star.png" onclick="changeImage()" alt="star image">
+            <img id="myImage" src="star.png" onclick="changeImage()" alt="star image">
+            <h4>Overall,how would you rate you experience with us?</h4>
+        </div>
+        <label for="heading">How satisfied are you with<span id="star">*</span></label>
+
+        <div class="table">
+            <table class="table-content">
+                <thead>
+                    <tr>
+                        <td> </td>
+                        <td>Very Unsatisfied</td>
+                        <td>Unsatisfied</td>
+                        <td>Neutral</td>
+                        <td>satisfied</td>
+                        <td>Very satisfied</td>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Purchase</td>
+                        <td id="radio"><input type="radio" name="check-1"></td>
+                        <td id="radio"><input type="radio" name="check-1"></td>
+                        <td id="radio"><input type="radio" name="check-1"></td>
+                        <td id="radio"><input type="radio" name="check-1"></td>
+                        <td id="radio"><input type="radio" name="check-1"></td>
+                    </tr>
+                    <tr>
+                        <td>Service</td>
+                        <td id="radio"><input type="radio" name="check-2"></td>
+                        <td id="radio"><input type="radio" name="check-2"></td>
+                        <td id="radio"><input type="radio" name="check-2"></td>
+                        <td id="radio"><input type="radio" name="check-2"></td>
+                        <td id="radio"><input type="radio" name="check-2"></td>
+                    </tr>
+                    <tr>
+                        <td>Company Overall</td>
+                        <td id="radio"><input type="radio" name="check-3"></td>
+                        <td id="radio"><input type="radio" name="check-3"></td>
+                        <td id="radio"><input type="radio" name="check-3"></td>
+                        <td id="radio"><input type="radio" name="check-3"></td>
+                        <td id="radio"><input type="radio" name="check-3"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="second-section">
+            <label for="heading">How Likely are you with<span id="star">*</span></label>
+            <table class="table-content">
+                <thead>
+                    <tr>
+                        <td> </td>
+                        <td>Very Unlikely</td>
+                        <td>Unlikely</td>
+                        <td>Neutral</td>
+                        <td>Likely</td>
+                        <td>Very Likely</td>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="big">Buy from us again</td>
+                        <td id="radio"><input type="radio" name="check-1"></td>
+                        <td id="radio"><input type="radio" name="check-1"></td>
+                        <td id="radio"><input type="radio" name="check-1"></td>
+                        <td id="radio"><input type="radio" name="check-1"></td>
+                        <td id="radio"><input type="radio" name="check-1"></td>
+                    </tr>
+                    <tr>
+                        <td id="big">Recommend our product to other</td>
+                        <td id="radio"><input type="radio" name="check-2"></td>
+                        <td id="radio"><input type="radio" name="check-2"></td>
+                        <td id="radio"><input type="radio" name="check-2"></td>
+                        <td id="radio"><input type="radio" name="check-2"></td>
+                        <td id="radio"><input type="radio" name="check-2"></td>
+                    </tr>
+                    <tr>
+                        <td id="big">Recommend our Company to other</td>
+                        <td id="radio"><input type="radio" name="check-3"></td>
+                        <td id="radio"><input type="radio" name="check-3"></td>
+                        <td id="radio"><input type="radio" name="check-3"></td>
+                        <td id="radio"><input type="radio" name="check-3"></td>
+                        <td id="radio"><input type="radio" name="check-3"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="text-box">
+            <label for="heading">Additional comments or suggestions</label>
+            <textarea name="comments" id="" cols="200" rows="10"></textarea>
+        </div>
+
+        <div>
+            <button form="Submit">Submit</button>
+        </div>
+    </div>
+
+
+    <!-- function for star -->
+    <script>
+        function changeImage() {
+            var image = document.getElementById('myImage');
+            for (let i = 0; i < 5; i++) {
+                if (image.src.match("star.png")) {
+                    image.src = "gold.png";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
